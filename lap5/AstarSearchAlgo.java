@@ -22,12 +22,12 @@ public class AstarSearchAlgo implements IPuzzleAlgo{
 					node.setParent(current);
 					choDuyet.add(node);
 				}
-//				else if(choDuyet.contains(node) && node.getG()>current.getG()){
-////					node.setG(current.getG()+1);
-////					choDuyet.remove(node);
-//					node.setParent(current);
-//					choDuyet.add(node);
-//				}
+				else if(choDuyet.contains(node) && node.getF()>current.getF()){
+					node.setG(current.getG()+1);
+					choDuyet.remove(node);
+					node.setParent(current);
+					choDuyet.add(node);
+				}
 			}
 		}
 	}
