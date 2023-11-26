@@ -81,6 +81,12 @@ public class test {
 		o.addChild(w);
 		o.addChild(x);
 		
+		System.out.println("========= test for MiniMaxSearchAlgo() ================");
+		ISearchAlgo is1 = new MiniMaxSearchAlgo();
+		is1.execute(a);
+		
+		System.out.println();
+		System.out.println("========= test for AlphaBetaSearchAlgo() ==============");
 		ISearchAlgo is2 = new AlphaBetaSearchAlgo();
 		is2.execute(a);
 		

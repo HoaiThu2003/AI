@@ -14,7 +14,7 @@ public class MiniMaxSearchAlgo implements ISearchAlgo {
 		// Enter your code here
 		int v = maxValue(node);
 		node.setValue(v);
-		System.out.println(v);
+		System.out.println("gia tri max" + v);
 	}
 
 	// function MAX-VALUE(state) returns a utility value
